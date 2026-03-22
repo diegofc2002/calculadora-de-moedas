@@ -53,3 +53,25 @@ function calculadoraDolarCanadenseDolarAmericano() {
         return alert('Por favor, insira um número válido / maior do que zero.');
     }
 }
+
+function calculadoraDolarAmericanoReal() {
+    let USD3 = parseFloat(prompt('Digite um valor em USD para conversão em BRL:'));
+    let BRL4 = (USD3 * 5.31).toFixed(2);
+
+    if (USD3 > 0) {
+        return alert(`Aqui está sua conversão: USD ${USD3} = BRL ${BRL4}`);
+    } else {
+        return alert('Por favor, insira um número válido / maior do que zero.');
+    }
+}
+
+function calculadoraDolarAmericanoDolarCanadense() {
+    let USD4 = parseFloat(prompt('Digite um valor em USD para conversão em CAD:'));
+    let CAD4 = (USD4 * 1.37).toFixed(2);
+
+    if (USD4 > 0) {
+        return alert(`Aqui está sua conversão: USD ${USD4} = CAD ${CAD4}.`);
+    } else {
+        return alert('Por favor, insira um número válido / maior do que zero.');
+    }
+}
